@@ -6,5 +6,5 @@ A group of PHP helpers for the new AS compiler. For use with the npm package `@a
 
 1. Make any changes you need to the package
 2. Merge into main
-3. Create a new tag with the new version number, which will automatically push to packagist.
-   This could be automated later with auto tag creation on merge to main, but currently it's a manual process.
+3. An automated action will generate a PR called Version Packages. Review it and then merge this in.
+4. An action will tag the repo which will in turn cause packagist to release a new version.
