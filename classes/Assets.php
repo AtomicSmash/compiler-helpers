@@ -23,7 +23,7 @@ abstract class Assets {
 	 *
 	 * @var string
 	 */
-	private $build_folder = '/dist/';
+	protected $build_folder = '/dist/';
 
 	/**
 	 * Manifest content
