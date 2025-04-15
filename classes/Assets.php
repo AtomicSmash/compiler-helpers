@@ -116,7 +116,7 @@ abstract class Assets {
 			return null;
 		}
 		return array(
-			'source' => $this->context_folder . $this->build_folder . $asset,
+			'source' => home_url( substr( $this->context_folder, strpos( $this->context_folder, 'wp-content' ) ) . $this->build_folder . $asset ),
 			'dependencies' => isset( $this->asset_info[ $filename ] ) ? $this->asset_info[ $filename ]['dependencies'] : array(),
 			'version' => isset( $this->asset_info[ $filename ] ) ? $this->asset_info[ $filename ]['version'] : null,
 		);
